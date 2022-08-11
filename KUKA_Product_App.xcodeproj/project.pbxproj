@@ -9,23 +9,49 @@
 /* Begin PBXBuildFile section */
 		F101D36928A163F00068AC37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F101D36828A163F00068AC37 /* AppDelegate.swift */; };
 		F101D36B28A163F00068AC37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F101D36A28A163F00068AC37 /* SceneDelegate.swift */; };
-		F101D36D28A163F00068AC37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F101D36C28A163F00068AC37 /* ViewController.swift */; };
 		F101D37028A163F00068AC37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F101D36E28A163F00068AC37 /* Main.storyboard */; };
 		F101D37328A163F00068AC37 /* KUKA_Product_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F101D37128A163F00068AC37 /* KUKA_Product_App.xcdatamodeld */; };
 		F101D37528A163F20068AC37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F101D37428A163F20068AC37 /* Assets.xcassets */; };
 		F101D37828A163F20068AC37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F101D37628A163F20068AC37 /* LaunchScreen.storyboard */; };
+		F101D38528A164900068AC37 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F101D38428A164900068AC37 /* Product.swift */; };
+		F101D38728A164D00068AC37 /* PostUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = F101D38628A164D00068AC37 /* PostUrls.swift */; };
+		F101D38928A164F20068AC37 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F101D38828A164F20068AC37 /* WebService.swift */; };
+		F110898128A1656400813260 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F110898028A1656400813260 /* Alamofire */; };
+		F110898428A165A200813260 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = F110898328A165A200813260 /* AlamofireImage */; };
+		F110898628A165C900813260 /* WebServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110898528A165C900813260 /* WebServiceDelegate.swift */; };
+		F110898828A1661000813260 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110898728A1661000813260 /* CategoriesViewController.swift */; };
+		F110898A28A1664500813260 /* ProductListPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110898928A1664500813260 /* ProductListPageViewController.swift */; };
+		F110898C28A1667300813260 /* ProductDetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110898B28A1667300813260 /* ProductDetailPageViewController.swift */; };
+		F110898E28A1669D00813260 /* ProductListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110898D28A1669D00813260 /* ProductListCollectionViewCell.swift */; };
+		F110899028A19E4C00813260 /* ProductDetailCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110898F28A19E4C00813260 /* ProductDetailCollectionReusableView.swift */; };
+		F110899228A1C00B00813260 /* DiscountItemResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110899128A1C00B00813260 /* DiscountItemResponseModel.swift */; };
+		F19CF4B928A23F69006B347B /* DiscountItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19CF4B828A23F69006B347B /* DiscountItemCollectionViewCell.swift */; };
+		F19CF4BB28A2463A006B347B /* DiscountItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19CF4BA28A2463A006B347B /* DiscountItem.swift */; };
+		F19CF4C128A3067B006B347B /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19CF4C028A3067B006B347B /* ProductManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F101D36528A163F00068AC37 /* KUKA_Product_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KUKA_Product_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F101D36828A163F00068AC37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F101D36A28A163F00068AC37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F101D36C28A163F00068AC37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F101D36F28A163F00068AC37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F101D37228A163F00068AC37 /* KUKA_Product_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KUKA_Product_App.xcdatamodel; sourceTree = "<group>"; };
 		F101D37428A163F20068AC37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F101D37728A163F20068AC37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F101D37928A163F20068AC37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F101D38428A164900068AC37 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		F101D38628A164D00068AC37 /* PostUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUrls.swift; sourceTree = "<group>"; };
+		F101D38828A164F20068AC37 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		F110898528A165C900813260 /* WebServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceDelegate.swift; sourceTree = "<group>"; };
+		F110898728A1661000813260 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		F110898928A1664500813260 /* ProductListPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListPageViewController.swift; sourceTree = "<group>"; };
+		F110898B28A1667300813260 /* ProductDetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailPageViewController.swift; sourceTree = "<group>"; };
+		F110898D28A1669D00813260 /* ProductListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListCollectionViewCell.swift; sourceTree = "<group>"; };
+		F110898F28A19E4C00813260 /* ProductDetailCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailCollectionReusableView.swift; sourceTree = "<group>"; };
+		F110899128A1C00B00813260 /* DiscountItemResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountItemResponseModel.swift; sourceTree = "<group>"; };
+		F19CF4B828A23F69006B347B /* DiscountItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		F19CF4BA28A2463A006B347B /* DiscountItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountItem.swift; sourceTree = "<group>"; };
+		F19CF4C028A3067B006B347B /* ProductManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F110898128A1656400813260 /* Alamofire in Frameworks */,
+				F110898428A165A200813260 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +86,68 @@
 		F101D36728A163F00068AC37 /* KUKA_Product_App */ = {
 			isa = PBXGroup;
 			children = (
+				F101D37F28A164200068AC37 /* Models */,
+				F101D38028A1642A0068AC37 /* Views */,
+				F101D38128A164330068AC37 /* Controllers */,
+				F101D38328A164440068AC37 /* Services */,
+				F101D38228A1643D0068AC37 /* Constants */,
 				F101D36828A163F00068AC37 /* AppDelegate.swift */,
 				F101D36A28A163F00068AC37 /* SceneDelegate.swift */,
-				F101D36C28A163F00068AC37 /* ViewController.swift */,
-				F101D36E28A163F00068AC37 /* Main.storyboard */,
 				F101D37428A163F20068AC37 /* Assets.xcassets */,
-				F101D37628A163F20068AC37 /* LaunchScreen.storyboard */,
 				F101D37928A163F20068AC37 /* Info.plist */,
 				F101D37128A163F00068AC37 /* KUKA_Product_App.xcdatamodeld */,
 			);
 			path = KUKA_Product_App;
+			sourceTree = "<group>";
+		};
+		F101D37F28A164200068AC37 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F101D38428A164900068AC37 /* Product.swift */,
+				F110899128A1C00B00813260 /* DiscountItemResponseModel.swift */,
+				F19CF4BA28A2463A006B347B /* DiscountItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F101D38028A1642A0068AC37 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F101D36E28A163F00068AC37 /* Main.storyboard */,
+				F101D37628A163F20068AC37 /* LaunchScreen.storyboard */,
+				F110898D28A1669D00813260 /* ProductListCollectionViewCell.swift */,
+				F110898F28A19E4C00813260 /* ProductDetailCollectionReusableView.swift */,
+				F19CF4B828A23F69006B347B /* DiscountItemCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F101D38128A164330068AC37 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F110898728A1661000813260 /* CategoriesViewController.swift */,
+				F110898928A1664500813260 /* ProductListPageViewController.swift */,
+				F110898B28A1667300813260 /* ProductDetailPageViewController.swift */,
+				F19CF4C028A3067B006B347B /* ProductManager.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F101D38228A1643D0068AC37 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F101D38628A164D00068AC37 /* PostUrls.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F101D38328A164440068AC37 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F101D38828A164F20068AC37 /* WebService.swift */,
+				F110898528A165C900813260 /* WebServiceDelegate.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +166,10 @@
 			dependencies = (
 			);
 			name = KUKA_Product_App;
+			packageProductDependencies = (
+				F110898028A1656400813260 /* Alamofire */,
+				F110898328A165A200813260 /* AlamofireImage */,
+			);
 			productName = KUKA_Product_App;
 			productReference = F101D36528A163F00068AC37 /* KUKA_Product_App.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +198,10 @@
 				Base,
 			);
 			mainGroup = F101D35C28A163F00068AC37;
+			packageReferences = (
+				F110897F28A1656400813260 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F110898228A165A200813260 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = F101D36628A163F00068AC37 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,9 +229,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F101D36D28A163F00068AC37 /* ViewController.swift in Sources */,
+				F19CF4B928A23F69006B347B /* DiscountItemCollectionViewCell.swift in Sources */,
 				F101D37328A163F00068AC37 /* KUKA_Product_App.xcdatamodeld in Sources */,
+				F110898828A1661000813260 /* CategoriesViewController.swift in Sources */,
+				F110898A28A1664500813260 /* ProductListPageViewController.swift in Sources */,
+				F101D38928A164F20068AC37 /* WebService.swift in Sources */,
+				F110898C28A1667300813260 /* ProductDetailPageViewController.swift in Sources */,
+				F19CF4BB28A2463A006B347B /* DiscountItem.swift in Sources */,
+				F101D38528A164900068AC37 /* Product.swift in Sources */,
+				F110899228A1C00B00813260 /* DiscountItemResponseModel.swift in Sources */,
+				F110899028A19E4C00813260 /* ProductDetailCollectionReusableView.swift in Sources */,
+				F101D38728A164D00068AC37 /* PostUrls.swift in Sources */,
+				F19CF4C128A3067B006B347B /* ProductManager.swift in Sources */,
+				F110898628A165C900813260 /* WebServiceDelegate.swift in Sources */,
 				F101D36928A163F00068AC37 /* AppDelegate.swift in Sources */,
+				F110898E28A1669D00813260 /* ProductListCollectionViewCell.swift in Sources */,
 				F101D36B28A163F00068AC37 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -297,6 +397,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -308,7 +409,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,6 +426,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -336,7 +438,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -362,6 +464,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F110897F28A1656400813260 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F110898228A165A200813260 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F110898028A1656400813260 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F110897F28A1656400813260 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F110898328A165A200813260 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F110898228A165A200813260 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		F101D37128A163F00068AC37 /* KUKA_Product_App.xcdatamodeld */ = {
