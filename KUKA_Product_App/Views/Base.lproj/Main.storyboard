@@ -422,12 +422,23 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlr-LC-OJc">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xyP-oH-MgL">
                                                             <rect key="frame" x="0.0" y="354" width="374" height="0.0"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlr-LC-OJc">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="338.5" height="0.0"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="70" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7q4-h1-33N">
+                                                                    <rect key="frame" x="343.5" y="0.0" width="30.5" height="0.0"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                                                    <color key="textColor" systemColor="systemRedColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SfB-Gd-xnu">
                                                             <rect key="frame" x="0.0" y="371" width="374" height="1"/>
                                                             <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
@@ -490,6 +501,7 @@
                                         <outlet property="addButton" destination="2jr-eB-ORA" id="FIw-Ws-j5P"/>
                                         <outlet property="contentView" destination="0cc-0G-MOF" id="Qrw-BK-1iG"/>
                                         <outlet property="descriptionLabel" destination="yEP-pm-Q8t" id="xYH-yv-vTn"/>
+                                        <outlet property="discountedPriceLabel" destination="7q4-h1-33N" id="BXR-qC-ZLa"/>
                                         <outlet property="priceLabel" destination="tlr-LC-OJc" id="Gcw-GY-VvB"/>
                                         <outlet property="productImage" destination="kQ8-Nq-2rm" id="SaI-kc-6ht"/>
                                         <outlet property="rateCountLabel" destination="wzE-Jq-zx5" id="hWT-bQ-8hC"/>

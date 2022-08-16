@@ -16,6 +16,9 @@ class ProductManager{
     func addProductToCart(id: Int?) -> Bool{
         if let productId = id{
             cart.append(productId)
+            if isDiscountItem(id: id){
+                setDiscountItemLevels(increase: true, id: id)
+            }
             return true
         }
         return false
@@ -24,6 +27,9 @@ class ProductManager{
     func removeProductFromCart(id: Int?) -> Bool{
         if let productId = id, let i = cart.firstIndex(where: {$0 == productId}){
             cart.remove(at: i)
+            if isDiscountItem(id: id){
+                setDiscountItemLevels(increase: false, id: id)
+            }
             return true
         }
         return false
@@ -35,11 +41,7 @@ class ProductManager{
         }
         return false
     }
-    
-    func getDiscountLevel() -> Int{
-        return discountItems.filter{isProductOnCart(id: $0.id)}.count + 1
-    }
-    
+
     func getDiscountItemCount() -> Int{
         return discountItems.count
     }
@@ -67,10 +69,24 @@ class ProductManager{
     }
 
     func getDiscountedPrice(id: Int?) -> Double?{
-        if let productId = id, !isProductOnCart(id: productId), let item = getDiscountItem(id: productId){
-            let level = getDiscountLevel()
-            return item.getDiscountedPrice(level: level)
+        if let productId = id, let item = getDiscountItem(id: productId){
+            return item.getDiscountedPrice(level: item.currentLevel)
         }
         return nil
+    }
+    
+    func isDiscountItem(id: Int?) -> Bool{
+        if let productId = id{
+            return discountItems.contains(where: {$0.id == productId})
+        }
+        return false
+    }
+    
+    func setDiscountItemLevels(increase: Bool, id: Int?){
+        for item in discountItems {
+            if item.id != id{
+                item.changeLevel(increase: increase)
+            }
+        }
     }
 }

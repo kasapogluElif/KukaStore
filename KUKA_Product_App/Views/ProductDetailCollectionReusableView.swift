@@ -18,6 +18,8 @@ class ProductDetailCollectionReusableView: UICollectionReusableView {
     @IBOutlet weak var star5Image: UIImageView!
     @IBOutlet weak var rateCountLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    
+    @IBOutlet weak var discountedPriceLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var addButton: UIButton!
     
@@ -38,7 +40,7 @@ class ProductDetailCollectionReusableView: UICollectionReusableView {
     func setData(product: Product){
         id = product.id
         isAdded = productManager.isProductOnCart(id: id)
-        
+        setPriceLabels(item: product)
         if let url = URL(string: product.image){
             productImage.af.setImage(withURL: url)
         }
@@ -46,8 +48,23 @@ class ProductDetailCollectionReusableView: UICollectionReusableView {
         titleLabel.text = product.title
         setRateStars(rate: product.rating.rate)
         rateCountLabel.text = "(\(String(product.rating.count)))"
-        priceLabel.text = "\(String(product.price)) €"
+       // priceLabel.text = "\(String(product.price)) €"
         descriptionLabel.text = product.description
+    }
+    
+    fileprivate func setPriceLabels(item: Product){
+        if let discountedPrice = productManager.getDiscountedPrice(id: id){
+            discountedPriceLabel.isHidden = false
+            discountedPriceLabel.text = "\(String(discountedPrice)) €"
+            
+            let attrPrice = NSMutableAttributedString(string: "\(String(item.price)) €")
+            attrPrice.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 1, range: NSMakeRange(0, attrPrice.length))
+            priceLabel.attributedText = attrPrice
+        }else{
+            discountedPriceLabel.isHidden = true
+            priceLabel.attributedText = nil
+            priceLabel.text = "\(String(item.price)) €"
+        }
     }
     
     fileprivate func setRateStars(rate: Double){
